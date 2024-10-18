@@ -67,6 +67,7 @@ const schema = {
       type: 'media',
       multiple: false,
       required: true,
+      configurable: false,
       allowedTypes: ['images'],
       pluginOptions: {
         i18n: {
@@ -78,10 +79,71 @@ const schema = {
       type: 'media',
       multiple: false,
       required: true,
+      configurable: false,
       allowedTypes: ['images'],
       pluginOptions: {
         i18n: {
           localized: false,
+        },
+      },
+    },
+    facebookLink: {
+      type: 'string',
+      required: false,
+      configurable: false,
+      pluginOptions: {
+        i18n: {
+          localized: true,
+        },
+      },
+    },
+    instagramLink: {
+      type: 'string',
+      required: false,
+      configurable: false,
+      pluginOptions: {
+        i18n: {
+          localized: true,
+        },
+      },
+    },
+    linkedinLink: {
+      type: 'string',
+      required: false,
+      configurable: false,
+      pluginOptions: {
+        i18n: {
+          localized: true,
+        },
+      },
+    },
+    tiktokLink: {
+      type: 'string',
+      required: false,
+      configurable: false,
+      pluginOptions: {
+        i18n: {
+          localized: true,
+        },
+      },
+    },
+    xLink: {
+      type: 'string',
+      required: false,
+      configurable: false,
+      pluginOptions: {
+        i18n: {
+          localized: true,
+        },
+      },
+    },
+    youtube: {
+      type: 'string',
+      required: false,
+      configurable: false,
+      pluginOptions: {
+        i18n: {
+          localized: true,
         },
       },
     },

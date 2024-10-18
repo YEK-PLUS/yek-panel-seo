@@ -4,13 +4,6 @@
   "type": "commonjs",
   "exports": {
     "./package.json": "./package.json",
-    "./strapi-admin": {
-      "types": "./dist/admin/src/index.d.ts",
-      "source": "./admin/src/index.ts",
-      "import": "./dist/admin/index.mjs",
-      "require": "./dist/admin/index.js",
-      "default": "./dist/admin/index.js"
-    },
     "./strapi-server": {
       "types": "./dist/server/src/index.d.ts",
       "source": "./server/src/index.ts",
@@ -27,7 +20,6 @@
     "watch": "strapi-plugin watch",
     "watch:link": "strapi-plugin watch:link",
     "verify": "strapi-plugin verify",
-    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
     "test:ts:back": "run -T tsc -p server/tsconfig.json"
   },
   "dependencies": {
@@ -59,7 +51,7 @@
   "strapi": {
     "kind": "plugin",
     "name": "seo",
-    "displayName": "YEK-PLUS SEO",
+    "displayName": "YEK Panel SEO",
     "description": "Seo settings for your website"
   },
   "name": "seo",

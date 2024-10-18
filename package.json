@@ -70,5 +70,9 @@
   "bugs": {
     "url": "https://github.com/YEK-PLUS/yek-panel-seo/issues"
   },
-  "homepage": "https://github.com/YEK-PLUS/yek-panel-seo#readme"
+  "homepage": "https://github.com/YEK-PLUS/yek-panel-seo#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

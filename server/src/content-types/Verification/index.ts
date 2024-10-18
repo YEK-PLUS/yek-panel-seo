@@ -1,12 +1,11 @@
 const schema = {
   kind: 'singleType',
-  collectionName: 'yek-plus_verification',
+  collectionName: 'yek-panel-verification',
   info: {
-    name: 'verification',
-    description: 'Seo settings for your website',
-    singularName: 'verification',
-    pluralName: 'verifications',
-    displayName: 'Verification',
+    name: 'yek-panel-verification',
+    singularName: 'yek-panel-verification',
+    pluralName: 'yek-panel-verifications',
+    displayName: 'YEK Panel Verifications',
   },
   options: {
     reviewWorkflows: false,

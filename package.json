@@ -20,7 +20,11 @@
     "watch": "strapi-plugin watch",
     "watch:link": "strapi-plugin watch:link",
     "verify": "strapi-plugin verify",
-    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+    "test:ts:back": "run -T tsc -p server/tsconfig.json",
+    "patch": "npm version patch",
+    "upload": "npm run patch && npm run publish:npm && npm run publish:github",
+    "publish:npm": "npm publish --@yek-plus:registry=https://registry.npmjs.org",
+    "publish:github": "npm publish --@yek-plus:registry=https://npm.pkg.github.com"
   },
   "dependencies": {
     "@strapi/design-system": "^2.0.0-rc.11",
@@ -54,8 +58,17 @@
     "displayName": "YEK Panel SEO",
     "description": "Seo settings for your website"
   },
-  "name": "seo",
+  "name": "@yek-plus/yek-panel-seo",
   "description": "Seo settings for your website",
   "license": "MIT",
-  "author": "YEK-PLUS <admin@yek.plus>"
+  "author": "YEK-PLUS <admin@yek.plus>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YEK-PLUS/yek-panel-seo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YEK-PLUS/yek-panel-seo/issues"
+  },
+  "homepage": "https://github.com/YEK-PLUS/yek-panel-seo#readme"
 }
